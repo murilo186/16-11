@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>ex2</title>
+</head>
+<style>
+
+</style>
+    <body>
+        <form name="frmValores">
+            Informe um caracter: <input type="text" name="nome" maxlength="1"><br>
+        Informe um número: <input type="number" name="numero" min="1"><br>
+        <input type="button" value="Enviar" onclick="enviarDados();">
+        </form>
+    
+            <a href="main.html"><button>voltar</button></a>
+          
+      </body>
+
+
+	<script>
+		function enviarDados()
+    {
+		var i, nome, letra, numero;
+
+    nome = document.frmValores.nome.value;
+    numero = document.frmValores.numero.value;
+
+    document.write("<table border>");
+   
+
+for (i = 0; i < numero; i++) 
+{
+  if ((i%10) == 0)
+  document.write("<tr> <td>" + nome + "</td>");
+  
+  else
+  document.write("<td>" + nome + "</td>");
+}
+}	</script>
+
+
+
+</html>
